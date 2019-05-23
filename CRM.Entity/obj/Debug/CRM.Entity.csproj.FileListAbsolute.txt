@@ -1,0 +1,12 @@
+C:\Users\busra\source\repos\CRM\CRM.Entity\bin\Debug\CRM.Entity.dll.config
+C:\Users\busra\source\repos\CRM\CRM.Entity\bin\Debug\CRM.Entity.dll
+C:\Users\busra\source\repos\CRM\CRM.Entity\bin\Debug\CRM.Entity.pdb
+C:\Users\busra\source\repos\CRM\CRM.Entity\bin\Debug\EntityFramework.dll
+C:\Users\busra\source\repos\CRM\CRM.Entity\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\busra\source\repos\CRM\CRM.Entity\bin\Debug\EntityFramework.xml
+C:\Users\busra\source\repos\CRM\CRM.Entity\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\busra\source\repos\CRM\CRM.Entity\obj\Debug\CRM.Entity.csprojAssemblyReference.cache
+C:\Users\busra\source\repos\CRM\CRM.Entity\obj\Debug\CRM.Entity.csproj.CoreCompileInputs.cache
+C:\Users\busra\source\repos\CRM\CRM.Entity\obj\Debug\CRM.Entity.csproj.CopyComplete
+C:\Users\busra\source\repos\CRM\CRM.Entity\obj\Debug\CRM.Entity.dll
+C:\Users\busra\source\repos\CRM\CRM.Entity\obj\Debug\CRM.Entity.pdb

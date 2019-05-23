@@ -1,0 +1,15 @@
+C:\Users\busra\source\repos\CRM\CRM.DAL\bin\Debug\CRM.DAL.dll.config
+C:\Users\busra\source\repos\CRM\CRM.DAL\bin\Debug\CRM.DAL.dll
+C:\Users\busra\source\repos\CRM\CRM.DAL\bin\Debug\CRM.DAL.pdb
+C:\Users\busra\source\repos\CRM\CRM.DAL\bin\Debug\CRM.Entity.dll
+C:\Users\busra\source\repos\CRM\CRM.DAL\bin\Debug\EntityFramework.dll
+C:\Users\busra\source\repos\CRM\CRM.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\busra\source\repos\CRM\CRM.DAL\bin\Debug\CRM.Entity.pdb
+C:\Users\busra\source\repos\CRM\CRM.DAL\bin\Debug\CRM.Entity.dll.config
+C:\Users\busra\source\repos\CRM\CRM.DAL\bin\Debug\EntityFramework.xml
+C:\Users\busra\source\repos\CRM\CRM.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\busra\source\repos\CRM\CRM.DAL\obj\Debug\CRM.DAL.csprojAssemblyReference.cache
+C:\Users\busra\source\repos\CRM\CRM.DAL\obj\Debug\CRM.DAL.csproj.CoreCompileInputs.cache
+C:\Users\busra\source\repos\CRM\CRM.DAL\obj\Debug\CRM.DAL.csproj.CopyComplete
+C:\Users\busra\source\repos\CRM\CRM.DAL\obj\Debug\CRM.DAL.dll
+C:\Users\busra\source\repos\CRM\CRM.DAL\obj\Debug\CRM.DAL.pdb

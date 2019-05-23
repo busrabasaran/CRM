@@ -1,0 +1,68 @@
+﻿@model IEnumerable<CRM.Entity.Notes>
+
+@{
+    ViewBag.Title = "ListNotes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Notes</h2>
+
+<p>
+    <a href="~/Customer/AddNote" class="btn btn-primary" style="visibility:@ViewBag.NoteEkleButon">Not Ekle</a>
+</p>
+<table class="table">
+   
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmployeeID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NoteDetail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Date)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustomerID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EmployeeID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NoteDetail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Date)
+        </td>
+        <td>
+            @if (item.Status == "Red")
+            {
+                <span href="#" class="btn btn-danger">Red</span>
+            }
+            else if (item.Status == "Grey")
+            {
+                <span href="#" class="btn btn-warning">Yellow</span>
+            }
+            else
+            {
+                <span href="#" class="btn btn-success">Green</span>
+            }
+        </td>
+        <td>
+            <a href="/Customer/DeleteNote/@item.NoteID" class="btn btn-primary" style="visibility:@ViewBag.NoteSilButon">Delete</a>
+        </td>
+    </tr>
+}
+
+</table>

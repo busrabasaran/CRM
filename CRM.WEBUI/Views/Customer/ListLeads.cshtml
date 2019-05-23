@@ -1,0 +1,50 @@
+﻿@model IEnumerable<CRM.Entity.Leads>
+
+@{
+    ViewBag.Title = "ListLeads";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Leads</h2>
+
+<p>
+    <a href="~/Customer/AddLead" class="btn btn-primary" style="visibility:@ViewBag.LeadEkleButon">Lead Ekle</a>
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmployeeID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LeadDetail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Date)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustomerID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EmployeeID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LeadDetail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Date)
+        </td>
+        <td>
+            <a class="btn btn-primary" href="/Customer/DeleteLead/@item.LeadID" style="visibility:@ViewBag.LeadSilButon">Delete</a>
+        </td>
+    </tr>
+}
+
+</table>

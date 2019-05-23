@@ -1,0 +1,16 @@
+﻿@model CRM.Entity.Employees
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br />
+<br />
+
+@using (Html.BeginForm("Login", "Login", FormMethod.Post))
+{
+    @Html.TextBoxFor(x => x.Email, new { @class = "form-control", placeholder = "Email" })
+    <br />
+    @Html.TextBoxFor(x => x.Password, new { @class = "form-control", @type = "password", placeholder = "Şifre" })
+    <br />
+    <input type="submit" value=" login" />
+}

@@ -1,0 +1,70 @@
+﻿@model IEnumerable<CRM.Entity.Customers>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a href="~/Customer/AddCustomer" class="btn btn-primary" style="visibility:@ViewBag.MusteriEkleButon">Müşteri Ekle</a>
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Surname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BirthDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.City)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Phone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Surname)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BirthDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.City)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Phone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.ActionLink("Notlar", "ListNotes", new { id = item.CustomerID }, new { @class = "btn btn-primary" })
+            @Html.ActionLink("Leadler", "ListLeads", new { id = item.CustomerID }, new { @class = "btn btn-primary" })
+            <a class="btn btn-primary" href="/Customer/UpdateCustomer/@item.CustomerID" style="visibility:@ViewBag.MusteriGuncellerButon">Güncelle</a>
+            <a class="btn btn-primary" href="/Customer/DeleteCustomer/@item.CustomerID" style="visibility:@ViewBag.MusteriSilButon">Sil</a>
+        </td>
+    </tr>
+}
+
+</table>
